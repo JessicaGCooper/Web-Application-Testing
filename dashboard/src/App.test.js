@@ -10,13 +10,13 @@ test('renders without crashing', () => {
 test('it displays a title with text Player Stats', () => {
   const { getByText } = render(<App />);
   // console.log(container)
-  getByText(/player stat/i);
+  getByText(/^player stats$/i);
 });
 
 test('it displays a button with text Hit', () => {
   const { getByText } = render(<App />);
   // console.log(container)
-  getByText(/hit/i);
+  getByText(/^hit$/i);
 });
 
 test('it displays an output with the strike count', () => {
